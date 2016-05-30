@@ -33,7 +33,7 @@ public class CSVReader  {
         try
         {
             System.debug('Called ReadFile');
-            PageReference secondPage = new PageReference('/apex/MetadataDemoPageNEW');
+            PageReference secondPage = new PageReference('/apex/TestScrolingPage');
             nameFile=contentFile.toString();                //ContentFile Contains Data in BLOB Format
             String[] inputValues=nameFile.split('\n');      //Spliting Each Row of CSV File
             createDataStructure(inputValues);
@@ -396,11 +396,7 @@ public class CSVReader  {
 /*****************************************************************************************************************************************************/       
    public void validate()
     {
-        Boolean isValidationComplete=Validatedata.validateDataBeforeSubmit(dsList);
-        if(isValidationComplete)
-        {
-            ApexPages.addmessage(new ApexPages.message(ApexPages.severity.INFO,'No Validation Error. Please proceed to create fields.')); 
-        }
+        Validatedata.validateDataBeforeSubmit(dsList);
     }
     
 /*****************************************************************************************************************************************************/       
@@ -413,6 +409,7 @@ public class CSVReader  {
         {
             validationCompleteLabel=true;            
             PageReference reviewPage=new pageReference('/apex/ReviewMetadataDemo');
+            System.debug('reviewPage@@ validateAndSubmit@@'+reviewPage);
         	return reviewPage;
         }
         return null;

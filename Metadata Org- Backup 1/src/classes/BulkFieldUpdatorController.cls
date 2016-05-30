@@ -18,12 +18,12 @@ public class BulkFieldUpdatorController {
     public PageReference updateMetadata()
     {
         isUpdateMetadataCalled=true;
+        isRerenderSave=false;
         fieldsToUpdate();
         MetadataApi.updateField(dsListToUpdate);
         if(picklistDsList.size()>0 && !picklistDsList.isEmpty())
         	MetadataApi.updateField(picklistDsList);
-        PageReference pageref = new PageReference('/apex/BulkFieldUpdatorNew');
-            return pageref;
+        return null;
     }
     
     public PageReference createEditStructure()
