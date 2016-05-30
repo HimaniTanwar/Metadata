@@ -88,9 +88,7 @@ public class ValidateData {
             }        
         }
     }
-    
-    
-    
+
     private static void validatePicklist(List<DataStructure> dsList)
     {
         for(DataStructure ds: dsList)
