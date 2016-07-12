@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup Field Help Text</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account</relationshipLabel>
+        <relationshipName>Account</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Bio__c</fullName>
+        <description>Employee Bio</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Employee&apos;s detailed description.</inlineHelpText>
+        <label>Bio</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Blog__c</fullName>
+        <description>Employee Blog</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Enter the URL to employee&apos;s blog</inlineHelpText>
+        <label>Blog</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Commission__c</fullName>
+        <description>Employee Commission</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter 0 for employees without commission</inlineHelpText>
+        <label>Commission</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Company_Location__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>Geolocation Help Text</inlineHelpText>
+        <label>Company Location3</label>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <description>Date of birth</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Help Text</inlineHelpText>
+        <label>Date of Birth</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Joining__c</fullName>
+        <description>Date and time of joining</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and time for the first time employee punched</inlineHelpText>
+        <label>Date of Joining</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Education_Details__c</fullName>
+        <description>Employee Education Qualification Details</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Enter employee education qualifications</inlineHelpText>
+        <label>Education Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Email Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Help Text</inlineHelpText>
+        <label>Email</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee_Phone__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone Help Text</inlineHelpText>
+        <label>Employee Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Employee_email__c</fullName>
+        <description>Email Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Help Text</inlineHelpText>
+        <label>Employee email</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee_s_profile_description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Text Field Help Text</inlineHelpText>
+        <label>Employee&apos;s profile description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FieldTest10__c</fullName>
+        <description>Phone Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone Help Text</inlineHelpText>
+        <label>FieldTest10</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest11__c</fullName>
+        <description>Text Picklist Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Picklist Help Text</inlineHelpText>
+        <label>FieldTest11</label>
+        <picklist>
+            <picklistValues>
+                <fullName>pick1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>pick2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest12__c</fullName>
+        <description>Text Multi Picklist Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mutlipicklist Help Text</inlineHelpText>
+        <label>FieldTest12</label>
+        <picklist>
+            <picklistValues>
+                <fullName>pick1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>pick2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FieldTest13__c</fullName>
+        <description>TextArea Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TextArea Help Text</inlineHelpText>
+        <label>FieldTest13</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest16__c</fullName>
+        <description>Testing Url Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testing Url Field Help Text</inlineHelpText>
+        <label>FieldTest16</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest17__c</fullName>
+        <description>Testing Url Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testing Url Field Help Text</inlineHelpText>
+        <label>FieldTest17</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checbox Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkox Field Help Text</inlineHelpText>
+        <label>FieldTest1</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest21__c</fullName>
+        <description>Testing Url Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testing Url Field Help Text</inlineHelpText>
+        <label>FieldTest21</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest2__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Text Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text Field Help Text</inlineHelpText>
+        <label>FieldTest2</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FieldTest3__c</fullName>
+        <description>Currency Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currency Help Text</inlineHelpText>
+        <label>FieldTest3</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest4__c</fullName>
+        <description>Date Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Help Text</inlineHelpText>
+        <label>FieldTest4</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest5__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>DateTime Help Text</inlineHelpText>
+        <label>FieldTest5</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FieldTest7__c</fullName>
+        <description>Geolocation Field Description</description>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>Geolocation Help Text</inlineHelpText>
+        <label>FieldTest7</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>FieldTest9__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Percent Help Text</inlineHelpText>
+        <label>FieldTest9</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsValid1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checbox Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkox Field Help Text</inlineHelpText>
+        <label>IsValid1</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsValid2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checbox Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkox Field Help Text</inlineHelpText>
+        <label>IsValid2</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsValid3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checbox Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkox Field Help Text</inlineHelpText>
+        <label>IsValid3</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Employee&apos;s Manager</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reporting Manager</inlineHelpText>
+        <label>Manager</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Employee</relationshipLabel>
+        <relationshipName>Employee</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Married__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Maritial Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if Married</inlineHelpText>
+        <label>Married</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Number__c</fullName>
+        <description>Phone Field Description</description>
+        <externalId>false</externalId>
+        <label>Mobile Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>MultiselectPicklistField__c</fullName>
+        <description>Text Multi Picklist Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mutlipicklist Help Text</inlineHelpText>
+        <label>MultiselectPicklistField</label>
+        <picklist>
+            <picklistValues>
+                <fullName>pick1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>pick2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <description>Employee Name as per official documents</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text Field Help Text</inlineHelpText>
+        <label>Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salary__c</fullName>
+        <description>Salary</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currency Help Text</inlineHelpText>
+        <label>Salary</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>4</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Skills__c</fullName>
+        <description>Employee Skills</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select Multiple Skills from the given list</inlineHelpText>
+        <label>Skills</label>
+        <picklist>
+            <picklistValues>
+                <fullName>C/C++</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Java</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ruby</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solution__c</fullName>
+        <description>Long Text Area Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testing Long Text Area Help Text</inlineHelpText>
+        <label>Solution</label>
+        <length>256</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Website_link__c</fullName>
+        <description>Testing Url Field Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testing Url Field Help Text</inlineHelpText>
+        <label>Website link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Employee</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Employee Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Employees</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>
